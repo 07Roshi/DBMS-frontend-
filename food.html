@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+      .footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar scroll</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#" class="btn btn-danger">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Link
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Link</a>
+                    </li>
+                </ul>
+                <!-- Search Form -->
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <style>
+        .card {
+            transition: transform 0.3s ease;
+        }
+    
+        .card:hover {
+            transform: scale(1.05);
+        }
+    </style>
+    <!-- Card Deck -->
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Card 1 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="./img/burger.jfif" alt="Burger" class="card-img-top" width="50" height="400">
+                <div class="card-body">
+                    <h5 class="card-title">Burger</h5>
+                    <p class="card-text">A succulent grilled beef or plant-based patty nestled between soft buns, layered with crisp lettuce, juicy tomato slices, tangy pickles, and creamy mayo or cheese, creating a classic American comfort food experience.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="./img/cake.jfif" alt="Cake" class="card-img-top" width="50" height="400">
+                <div class="card-body">
+                    <h5 class="card-title">Cake</h5>
+                    <p class="card-text">A decadent dessert delight, characterized by its fluffy, moist layers of sponge, intricately frosted with creamy icing, and often adorned with vibrant decorations or fresh fruits, offering a delightful balance of sweetness and indulgence.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="./img/chickhyd.jfif" alt="Hyderabadi_Chicken" class="card-img-top" width="50" height="400">
+                <div class="card-body">
+                    <h5 class="card-title">Hyderabadi Chicken</h5>
+                    <p class="card-text">A flavorful dish originating from the royal kitchens of Hyderabad, featuring tender pieces of chicken marinated in a rich blend of aromatic spices, yogurt, and herbs, slow-cooked to perfection, resulting in a mouthwatering blend of savory flavors and tender textures.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="./img/fish.jfif" alt="Fish_Fry" class="card-img-top" width="50" height="400">
+                <div class="card-body">
+                    <h5 class="card-title">Fish Fry</h5>
+                    <p class="card-text">A crispy and golden-brown delicacy consisting of fresh fish fillets, coated in a seasoned batter or breadcrumb mixture, then deep-fried until crunchy on the outside and tender on the inside, offering a satisfyingly savory seafood experience.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="./img/matkabir.jfif" alt="Matka_Biryani" class="card-img-top" width="50" height="400">
+                <div class="card-body">
+                    <h5 class="card-title">Matka Biryani</h5>
+                    <p class="card-text">A traditional Indian rice dish cooked in a clay pot (matka), featuring fragrant basmati rice layered with succulent pieces of meat or vegetables, infused with a medley of aromatic spices and herbs, resulting in a rich and flavorful one-pot meal.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="./img/pannerm.jfif" alt="Panner_Manchurian" class="card-img-top" width="50" height="400">
+                <div class="card-body">
+                    <h5 class="card-title">Paneer Manchurian</h5>
+                    <p class="card-text"> A tantalizing Indo-Chinese fusion dish comprising chunks of paneer (Indian cottage cheese) coated in a spicy and tangy batter, deep-fried until crispy, and then stir-fried with a medley of colorful vegetables and a savory Manchurian sauce, creating a harmonious blend of flavors and textures.
+
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+        <!-- Card 7 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="./img/pizza.jfif" alt="Pizza" class="card-img-top" width="50" height="400">
+                <div class="card-body">
+                    <h5 class="card-title">Pizza</h5>
+                    <p class="card-text">An iconic Italian dish consisting of a thin or thick crust topped with a savory tomato sauce, melted cheese, and an array of delicious toppings such as pepperoni, mushrooms, bell peppers, and olives, baked to perfection in a hot oven, resulting in a mouthwatering culinary delight enjoyed worldwide.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+        <!-- Card 8 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="./img/shawarma.jfif" alt="Roll_Shawarma" class="card-img-top" width="50" height="400">
+                <div class="card-body">
+                    <h5 class="card-title">Roll Shawarma</h5>
+                    <p class="card-text">A Middle Eastern street food staple featuring tender slices of marinated meat, typically chicken wrapped in a warm pita bread along with crisp vegetables, garlic sauce, and tangy pickles, creating a portable and flavorful meal-on-the-go.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+        <!-- Card 9 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="./img/vegbir.jfif" alt="Veg_Biryani" class="card-img-top" width="50" height="400">
+                <div class="card-body">
+                    <h5 class="card-title">Veg Biryani</h5>
+                    <p class="card-text">A fragrant and aromatic Indian rice dish prepared with long-grain basmati rice, mixed vegetables, and a blend of spices, herbs, and seasonings, cooked together in layers to create a flavorful and hearty vegetarian meal, often served with raita or spicy chutney for added zest.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+      <div class="container">
+          <p>&copy; 2024 Food Company, Inc | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+      </div>
+  </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
